@@ -5,6 +5,9 @@ module.exports = {
     fontFamily: {
       sans: ["Josefin Sans", "sans-serif"],
     },
+    colors: {
+      redDark: "hsl(0, 93%, 68%)",
+    },
     extend: {
       fontSize: {
         size: "16px",
@@ -19,6 +22,7 @@ module.exports = {
 
       backgroundImage: {
         "hero-image": "url('/images/hero-desktop.jpg')",
+        "hero-tab": "url('/images/hero-mobile.jpg')",
       },
     },
   },

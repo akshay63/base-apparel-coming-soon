@@ -12,44 +12,63 @@
     />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body class="text-baseApparel-redGrayishDark">
-    <div class="coming-soon flex">
-      <div class="logo-mobile"></div>
-      <div
-        class="lg:w-7/12 h-screen px-32 py-12 flex flex-col justify-evenly items-start"
-      >
-        <img src="images/logo.svg" alt="Logo" class="logo mb-24" />
-        <div
-          class="font-bold text-baseApparel-redGrayishDark text-5xl uppercase mb-5"
-        >
-          <div
-            class="text-baseApparel-redLight font-light mb-2 tracking-widest"
-          >
-            We're
-          </div>
-          <div class="mb-2">coming</div>
-          <div class="">soon</div>
-        </div>
-        <p class="text-baseApparel-redLight mb-5">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <form action="">
-          <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            class="px-7 py-2 border border-baseApparel-redLight rounded-full shadow-sm placeholder-opacity-50 placeholder-baseApparel-redLight focus:outline-none focus:border-baseApparel-redDark focus:ring-1 focus:ring-baseApparel-redDark text-baseApparel-redGrayishDark h-12 w-96"
-          />
-          <input type="submit" value="" placeholder="btn" />
-        </form>
-      </div>
-      <div class="lg:w-5/12 bg-hero-image bg-no-repeat bg-cover h-screen"></div>
+  <body class="text-baseApparel-redGrayishDark flex max-lg:flex-col">
+    <div
+      class="logo-mobile h-20 max-lg:flex lg:hidden items-center w-full self-start"
+    >
+      <img src="images/logo.svg" alt="Logo" class="logo ml-10" />
+    </div>
+
+    <div class="hero-mobile lg:hidden w-full">
+      <img
+        src="images/hero-mobile.jpg"
+        alt="Hero Image Mobile"
+        class="hero-mobile max-md:hidden max-lg:hidden"
+      />
+      <div class="bg-hero-tab bg-no-repeat bg-cover h-80"></div>
     </div>
 
     <div
-      class="attribution font-light absolute top-2 text-xs left-32 opacity-20"
+      class="lg:w-7/12 2xl:w-1/2 h-screen xl:px-32 xl:py-12 md:px-24 flex flex-col justify-evenly items-start content max-lg:w-auto max-lg:items-center max-lg:justify-center max-lg:px-14 max-md:px-12 max-sm:px-10"
+    >
+      <img src="images/logo.svg" alt="Logo" class="logo mb-24 max-lg:hidden" />
+      <div
+        class="font-bold text-baseApparel-redGrayishDark 2xl:text-7xl text-5xl uppercase mb-5 heading max-lg:text-center max-sm:text-4xl"
+      >
+        <div class="text-baseApparel-redLight font-light mb-2">We're</div>
+        <div class="mb-2">coming</div>
+        <div class="">soon</div>
+      </div>
+      <p
+        class="text-baseApparel-redLight mb-5 para 2xl:w-auto 2xl:text-xl max-lg:text-center max-lg:mb-12"
+      >
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form method="post" action="/" class="relative 2xl:text-xl">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          required
+          class="px-7 py-2 border border-baseApparel-redLight rounded-full shadow-sm placeholder-opacity-50 placeholder-baseApparel-redLight focus:outline-none focus:border-baseApparel-redDark focus:ring-1 focus:ring-baseApparel-redDark text-baseApparel-redGrayishDark h-12 w-96 max-sm:w-80 max-sm:h-10"
+        />
+        <button
+          type="submit"
+          value="submit"
+          class="button flex justify-center items-center absolute -right-7"
+        >
+          <img src="images/icon-arrow.svg" alt="Arrow Icon" class="arrow" />
+        </button>
+      </form>
+    </div>
+    <div
+      class="lg:w-5/12 2xl:w-1/2 bg-hero-image bg-no-repeat bg-cover h-screen max-lg:hidden"
+    ></div>
+
+    <div
+      class="attribution font-light absolute lg:top-2 text-xs lg:left-32 opacity-20 max-lg:bottom-0 max-lg:left-0"
     >
       Challenge by
       <a
@@ -65,5 +84,7 @@
         >Akshay Meshram</a
       >.
     </div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
